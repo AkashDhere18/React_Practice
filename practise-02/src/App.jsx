@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import StopWatch from './components/StopWatch';
 import RandomJoke from './components/RandomJoke';
 import FormValidation from './components/formValidation';
+import ProductsFromaArray from './components/productsFromaArray';
+import CartDemo from './components/CartDemo';
+import SearchProducts from './components/SearchProducts';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -26,9 +29,12 @@ const App = () => {
       <button onClick={() => setCount(count - 1)}>Decrease</button>
     </div>
 
-    <StopWatch />
-    <RandomJoke />
-    <FormValidation />
+    {/* <StopWatch /> */}
+    {/* <RandomJoke /> */}
+    {/* <FormValidation /> */}
+    {/* <ProductsFromaArray /> */}
+    {/* <CartDemo /> */}
+    <SearchProducts />
     
     </>
   )

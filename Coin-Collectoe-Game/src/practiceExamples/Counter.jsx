@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 
 const Counter = () => {
 
+    const prevCount = useRef()
+
     const [num, setNum] = useState(0)
 
     function increaseNum(){
